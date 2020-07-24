@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(232, 235, 238);
+
+        }
+
+        #title {
+            margin-top: 200px;
+            font-family: sans-serif;
+            color: DarkCyan;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #start {
+            border-style: none;
+            background-color: cadetblue;
+            padding: 10px 25px;
+            border-radius: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: azure;
+            margin-top: 100px;
+            margin-left: 625px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="display: none;" id="title">ようこそ</h1>
+    <button id="start" style="display: none;">はじめる</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        $(function () {
+            $("#title").fadeIn(4000);
+            $("#start").fadeIn(4000);
+            $('#start').on('click', function () {
+                window.location.href = "http://localhost/LoveBirds&Co/explanation1.html";
+            });
+        });
+    </script>
+</body>
+
+</html>

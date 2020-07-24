@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            background-color: rgb(232, 235, 238);
+            font-family: "Custom Yu Gothic", "YuGothic", "Yu Gothic", Hiragino Sans, Hiragino Kaku Gothic ProN, "Meiryo", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            家事を記録しよう
+        </h1>
+    </header>
+    <div>
+
+        <!-- ここに画像をいれる -->
+        <img src="img/img_1461.jpg" alt="" width="300" height="265">
+
+    </div>
+    <div>
+        TO DOでやった家事やクリアしたミッションの一覧が表示されます。<br>
+        たくさん家事やミッションをクリアして、記録を残しましょう！
+    </div>
+</body>
+
+<button id="next1">次へ</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    $(function () {
+        $('#next1').on('click', function () {
+            window.location.href = "http://localhost/LoveBirds&Co/topPage.php";
+        });
+    });
+</script>
+
+</html>

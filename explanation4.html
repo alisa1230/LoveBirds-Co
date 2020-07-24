@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            background-color: rgb(232, 235, 238);
+            font-family: "Custom Yu Gothic", "YuGothic", "Yu Gothic", Hiragino Sans, Hiragino Kaku Gothic ProN, "Meiryo", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            二人で考える、二人のためのミッションを作成
+        </h1>
+    </header>
+    <div>
+
+        <!-- ここに画像をいれる -->
+        <img src="img/img_1460.jpg" alt="" width="300" height="265">
+    </div>
+    <div>
+        今できないことも二人で協力して、できるようにする。<br>
+        二人で目標を決め、ミッションを作成してください。<br>
+        達成できたら、二人で決めたご褒美をGetすることができます。<br>
+        目標達成までの道のりも楽しんでミッションを達成して、<br>
+        二人の仲を仲を深めていきましょう。
+    </div>
+    <button id="next1">次へ</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        $(function () {
+            $('#next1').on('click', function () {
+                window.location.href = "http://localhost/LoveBirds&Co/explanation5.html";
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
